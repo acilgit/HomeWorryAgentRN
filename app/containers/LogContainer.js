@@ -4,22 +4,21 @@ import React from 'react';
 
 import {connect} from 'react-redux';
 
-import MePage from '../pages/MePage';
-import OrderPage from '../pages/OrderPage';
-import ChatPage from '../pages/ChatPage';
+import ImagePage from '../pages/MePage';
 
 class ImageContainer extends React.Component {
     render() {
+        let LogPage = this.props.component;
         return (
-            <ImagePage {...this.props} />
+            <LogPage {...this.props} />
         )
     }
 }
 
 function mapStateToProps(state) {
-    const {image} = state;
+    const {log} = state;
     return {
-        image
+        log
     };
 }
 

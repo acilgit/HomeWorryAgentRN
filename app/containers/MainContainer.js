@@ -8,7 +8,7 @@ import MePage from '../pages/MePage';
 import OrderPage from '../pages/OrderPage';
 import ChatPage from '../pages/ChatPage';
 
-class ImageContainer extends React.Component {
+class MainContainer extends React.Component {
     render() {
         return (
             <ImagePage {...this.props} />
@@ -17,10 +17,10 @@ class ImageContainer extends React.Component {
 }
 
 function mapStateToProps(state) {
-    const {image} = state;
+    const {main} = state;
     return {
-        image
+        main
     };
 }
 
-export default connect(mapStateToProps)(ImageContainer);
+export default connect(mapStateToProps)(MainContainer);

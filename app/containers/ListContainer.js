@@ -3,7 +3,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import ListPage from '../pages/ListPage';
+import ListPage from '../pages/OrderPage';
 
 class ListContainer extends React.Component {
     render() {

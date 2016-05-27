@@ -13,7 +13,7 @@ import {
     View,
 } from 'react-native';
 
-import WebViewBridge from 'react-native-webview-bridge';
+//import WebViewBridge from 'react-native-webview-bridge';
 
 import * as webActions from '../actions/web';
 

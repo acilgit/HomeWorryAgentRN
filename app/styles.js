@@ -1,9 +1,14 @@
 "use strict";
 
 import React from 'react';
-import {PixelRatio,
+import {
+    Dimensions,
+    PixelRatio,
     StyleSheet,
 } from 'react-native';
+
+var {height, width} = Dimensions.get('window');
+
 exports.android = StyleSheet.create({
     container: {
         borderRadius: 5,
@@ -15,6 +20,12 @@ exports.android = StyleSheet.create({
         marginRight: 5,
         height: 80,
         padding: 0,
+    },
+    h:{
+        height,
+    },
+    w:{
+        width,
     },
     toolbar: {
         height: 56,
