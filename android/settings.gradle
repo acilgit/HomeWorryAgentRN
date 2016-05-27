@@ -1,0 +1,3 @@
+rootProject.name = 'HomeWorryAgent'
+
+include ':app'
